@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day2.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="208"/>
+        <CursorPos X="12" Y="251"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\fpc\3.2.2\source\packages\rtl-generics\src\generics.collections.pas"/>
+        <UnitName Value="Generics.Collections"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1146"/>
+        <CursorPos X="20" Y="1186"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="25">
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="45" Column="12" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="4" Column="23"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="17" Column="20" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="4" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="17" Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="52" Column="14" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="26" Column="26" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="9" Column="24"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="56" Column="10" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="26" Column="12" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="78" Column="51" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="101" Column="18" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="98" Column="23" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="90" Column="30" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="110" Column="13" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="141" Column="15" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="154" Column="63" TopLine="150"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="145" Column="23" TopLine="105"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="140" Column="45" TopLine="113"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="181" Column="16" TopLine="151"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="174" Column="29" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="184" Column="27" TopLine="157"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="188" TopLine="157"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="165" Column="23" TopLine="148"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="247" Column="14" TopLine="205"/>
+      </Position>
+      <Position>
+        <Filename Value="day2.lpr"/>
+        <Caret Line="231" Column="10" TopLine="199"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="day2.lpr"/>
+        <Line Value="252"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

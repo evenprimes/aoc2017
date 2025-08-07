@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day12.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="18" Y="20"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="18">
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="49" Column="37" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="70" Column="17" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="105" Column="8" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="123" Column="34" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="127" Column="39" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="28" Column="33"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="68" Column="45" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="69" Column="42" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="93" Column="16" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="105" Column="43" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="123" Column="37" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="127" Column="30" TopLine="99"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="69" Column="43" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="64" Column="35" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="129" Column="30" TopLine="83"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="113" Column="10" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="129" Column="29" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="122" Column="11" TopLine="95"/>
+      </Position>
+      <Position>
+        <Filename Value="day12.lpr"/>
+        <Caret Line="158" Column="58" TopLine="127"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="pipes"/>
+      </Item>
+      <Item>
+        <Expression Value="r"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day9.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="183"/>
+        <CursorPos X="5" Y="209"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="day10.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="5" Y="209"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="17">
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="55" Column="31" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="63" Column="14" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="129" Column="4" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="64" Column="20" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="66" Column="16" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="112" Column="13" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="76" Column="13" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="74" Column="31" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="76" Column="12" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="65" Column="16" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="80" Column="15" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="67" Column="11" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="82" TopLine="59"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="116" Column="50" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="203" Column="71" TopLine="162"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="191" Column="30" TopLine="153"/>
+      </Position>
+      <Position>
+        <Filename Value="day10.pas"/>
+        <Caret Line="209" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="day9.lpr"/>
+        <Caret Line="15" Column="22"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

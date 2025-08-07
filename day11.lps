@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day11.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="143"/>
+        <CursorPos X="18" Y="164"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="5">
+      <Position>
+        <Filename Value="day11.lpr"/>
+        <Caret Line="44" Column="54" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="day11.lpr"/>
+        <Caret Line="45" Column="15" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="day11.lpr"/>
+        <Caret Line="88" Column="39" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="day11.lpr"/>
+        <Caret Line="37" Column="12" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="day11.lpr"/>
+        <Caret Line="66" Column="52" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day11.lpr"/>
+        <Caret Line="95" Column="36" TopLine="69"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

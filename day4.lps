@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day4.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="212"/>
+        <CursorPos X="49" Y="240"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="7">
+      <Position>
+        <Filename Value="day4.lpr"/>
+        <Caret Line="58" Column="12" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="day4.lpr"/>
+        <Caret Line="5" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="day4.lpr"/>
+        <Caret Line="111" Column="22" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="day4.lpr"/>
+        <Caret Line="116" Column="39" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="day4.lpr"/>
+        <Caret Line="120" Column="22" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="day4.lpr"/>
+        <Caret Line="10" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="day4.lpr"/>
+        <Caret Line="221" Column="32" TopLine="193"/>
+      </Position>
+      <Position>
+        <Filename Value="day4.lpr"/>
+        <Caret Line="140" Column="30" TopLine="120"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

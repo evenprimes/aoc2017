@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day6.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="206"/>
+        <CursorPos X="36" Y="242"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="119" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="120" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="64" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="65" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="66" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="68" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="69" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="70" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="66" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="68" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="69" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="70" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="66" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="68" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="69" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="70" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="66" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="68" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="69" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="66" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="64" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="72" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="64" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="72" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="121" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="123" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="124" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="123" Column="26" TopLine="107"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="125" Column="77" TopLine="103"/>
+      </Position>
+      <Position>
+        <Filename Value="day6.lpr"/>
+        <Caret Line="147" Column="26" TopLine="140"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="b"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

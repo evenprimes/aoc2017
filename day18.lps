@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day18.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="18" Y="20"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="15">
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="90" Column="39" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="186" Column="32" TopLine="163"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="93" Column="43" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="81" Column="61" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="97" Column="42" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="85" Column="46" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="179" Column="56" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="86" Column="47" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="98" Column="40" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="148" Column="53" TopLine="135"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="187" Column="18" TopLine="169"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="102" Column="14" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="190" Column="14" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="103" Column="8" TopLine="86"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="99" Column="46" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="day18.lpr"/>
+        <Caret Line="190" Column="58" TopLine="174"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

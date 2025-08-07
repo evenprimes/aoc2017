@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day7.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="323"/>
+        <CursorPos X="7" Y="368"/>
+        <UsageCount Value="78"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="106" Column="40" TopLine="98"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="116" Column="21" TopLine="100"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="89" Column="41" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="116" Column="17" TopLine="105"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="117" Column="20" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="111" Column="14" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="107" Column="17" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="99" Column="31" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="101" Column="20" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="10" Column="7"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="119" Column="39" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="95" Column="17" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="151" Column="25" TopLine="115"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="212" Column="31" TopLine="165"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="186" Column="11" TopLine="162"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="212" Column="32" TopLine="181"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="139" Column="48" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="175" Column="16" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="270" Column="17" TopLine="269"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="65" Column="36" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="106" Column="18" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="112" Column="32" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="248" Column="8" TopLine="210"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="262" Column="9" TopLine="240"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="259" Column="26" TopLine="235"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="111" Column="18" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="293" Column="52" TopLine="265"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="268" Column="58" TopLine="244"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="294" Column="67" TopLine="255"/>
+      </Position>
+      <Position>
+        <Filename Value="day7.lpr"/>
+        <Caret Line="271" Column="55" TopLine="248"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

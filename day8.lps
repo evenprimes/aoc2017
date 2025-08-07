@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day8.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="18" Y="29"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="149" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="150" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="151" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="146" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="148" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="149" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="150" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="151" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="146" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="148" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="149" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="150" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="146" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="148" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="149" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="150" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="151" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="146" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="148" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="149" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="150" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="151" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="146" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="148" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="149" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="150" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="151" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="146" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="148" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="day8.lpr"/>
+        <Caret Line="74" Column="63" TopLine="44"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="line"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

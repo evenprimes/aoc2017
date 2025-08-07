@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day16.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="148"/>
+        <CursorPos X="27" Y="173"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="10">
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="63" Column="19" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="22" Column="18"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="57" Column="43" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="68" Column="20" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="45" Column="15" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="50" Column="50" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="78" Column="21" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="56" Column="44" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="98" Column="21" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="140" Column="24" TopLine="108"/>
+      </Position>
+      <Position>
+        <Filename Value="day16.lpr"/>
+        <Caret Line="171" Column="8" TopLine="141"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

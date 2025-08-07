@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day3.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="227"/>
+        <CursorPos X="44" Y="262"/>
+        <FoldState Value=" T3K29011 PViU2b"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <Debugger>
+      <Backend Value="{7D61DA46-BC26-49A4-A882-2ABA63C638E2}"/>
+    </Debugger>
+    <JumpHistory HistoryIndex="4">
+      <Position>
+        <Filename Value="day3.lpr"/>
+        <Caret Line="25" Column="8"/>
+      </Position>
+      <Position>
+        <Filename Value="day3.lpr"/>
+        <Caret Line="8" Column="21"/>
+      </Position>
+      <Position>
+        <Filename Value="day3.lpr"/>
+        <Caret Line="237" Column="77" TopLine="205"/>
+      </Position>
+      <Position>
+        <Filename Value="day3.lpr"/>
+        <Caret Line="218" Column="30" TopLine="183"/>
+      </Position>
+      <Position>
+        <Filename Value="day3.lpr"/>
+        <Caret Line="149" Column="27" TopLine="91"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

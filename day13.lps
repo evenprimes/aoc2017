@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day13.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="18" Y="20"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="10">
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="24" Column="18"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="94" Column="45" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="91" Column="51" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="160" Column="24" TopLine="127"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="136" Column="20" TopLine="93"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="158" Column="30" TopLine="125"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="148" Column="30" TopLine="125"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="162" Column="13" TopLine="146"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="175" Column="41" TopLine="143"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="174" Column="19" TopLine="149"/>
+      </Position>
+      <Position>
+        <Filename Value="day13.lpr"/>
+        <Caret Line="148" Column="28" TopLine="123"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

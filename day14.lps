@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="day14.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="18" Y="20"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="17">
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="26" Column="32" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="64" Column="38" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="103" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="140" Column="33" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="82" Column="88" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="87" Column="10" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="164" Column="51" TopLine="128"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="162" Column="25" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="136" Column="19" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="21" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="247" Column="18" TopLine="230"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="113" Column="26" TopLine="94"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="124" Column="71" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="271" Column="19" TopLine="247"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="26" Column="45"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="317" Column="38" TopLine="274"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="235" Column="67" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="day14.lpr"/>
+        <Caret Line="256" Column="2" TopLine="243"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
