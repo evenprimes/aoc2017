@@ -1,29 +1,46 @@
+
 // Just use this line in all modern FPC sources.
 {$ifdef FPC} {$mode objfpc}{$H+}{$J-} {$endif}
 // Needed for console programs on Windows,
 // otherwise (with Delphi) the default is GUI program without console.
 {$ifdef MSWINDOWS} {$apptype CONSOLE} {$endif}
 
+// https://adventofcode.com/2017/day/17
 
-// https://adventofcode.com/2017/day/14
+program day18;
 
-program day14;
-
-uses
+uses 
   //crt,
   Classes,
   SysUtils,
   Generics.Collections,
   RegExpr;
 
-const
-  IN_TEST = True;
-  PART = 1;
+  const 
+    IN_TEST = false;
+    PART = 1;
 
+  type 
+    TSecOp = class
+      isReg: boolean;
+      reg: integer;
+      val: integer;
+    end;
 
-type
-  TIntArray255 = array[0..255] of integer;
-  TIntArray = array of integer;
+    TOp = class
+      op: string;
+      regi: integer;
+      val: TSecOp;
+    end;
+
+    TOp2 = class
+      op: string;
+      // index of the register for first operand
+      regi: integer;
+      // value of the second operand, may need to lookup current register value
+      val: integer;
+    end;
+
 
   function read_data_file(fname: string): TStringList;
   begin
@@ -32,194 +49,195 @@ type
       Result.loadfromfile(fname);
     except
       on E: Exception do
-        WriteLn('Error reading file: ', E.ClassName, ': ', E.Message);
-    end;
+            WriteLn('Error reading file: ', E.ClassName, ': ', E.Message);
   end;
+end;
 
-  function get_ops2(datain: string): TIntArray;
-    // 17, 31, 73, 47, 23
-  var
-    din: TStringList;
-    i: integer;
-    dlen: integer;
-  begin
-    //din := read_data_file(fname);
-    dlen := length(datain);
+function IsSignedIntegerString(const s: string): boolean;
+var 
+  i: integer;
+begin
+  if s = '' then
+    Exit(False);
 
-    setlength(Result, dlen);
-    //writeln(datain);
-    for i := 0 to length(datain) - 1 do
+  // Handle optional leading + or -
+  i := 1;
+  if s[1] in ['+', '-'] then
     begin
-      Result[i] := Ord(datain[i + 1]);
-      //Write('"', datain[i + 1], '" ');
+      if Length(s) = 1 then
+        Exit(False);
+      // string is just "+" or "-", not valid
+      i := 2;
     end;
-    //Result[dlen] := 17;
-    //Result[dlen + 1] := 31;
-    //Result[dlen + 2] := 73;
-    //Result[dlen + 3] := 47;
-    //Result[dlen + 4] := 23;
-  end;
 
-  function get_knot_hash(a: TIntArray255): string;
-  var
-    offset, i, j: integer;
-    temphash: integer;
-  begin
-    Result := '';
-    for i := 0 to 15 do
+  // Check remaining characters are digits
+  for i := i to Length(s) do
+    if not (s[i] in ['0'..'9']) then
+      Exit(False);
+
+  Result := True;
+end;
+
+function parse_op(s: string): Top;
+var 
+  parts: TStringList;
+begin
+  Result := TOp.Create;
+  parts := TStringList.Create;
+  parts.Delimiter := ' ';
+  parts.DelimitedText := s;
+  writeln(s);
+  //Write(s, ' [0]: ', parts[0], ' [1]: "', parts[1], '"');
+
+
+  Result.op := parts[0];
+
+  Result.regi := Ord(parts[1][1]) - Ord('a');
+  if not ((parts[0] = 'snd') or (parts[0] = 'rcv')) then
     begin
-      offset := i * 16;
-      temphash := 0;
-      for j := 0 to 15 do
-      begin
-        temphash := temphash xor a[offset + j];
-      end;
-      Result := Result + hexstr(temphash, 2);
+      Result.val := TSecOp.Create;
+      if IsSignedIntegerString(parts[2]) then
+        begin
+          Result.val.isReg := False;
+          Result.val.val := StrToInt(parts[2]);
+        end
+      else
+        begin
+          Result.val.isReg := True;
+          //Write('  [2-reg]: ', parts[2]);
+          Result.val.reg := Ord(parts[2][1]) - Ord('a');
+        end;
+
     end;
-    Result := lowercase(Result);
-  end;
+  //writeln;
+  parts.Free;
+end;
 
-  function fold_array(a: TIntArray255; start_pos: integer; move: integer): TIntArray255;
-  var
-    i: integer;
-    from_pos, to_pos: integer;
-  begin
-    //setlength(Result, length(a));
-
-    // First, just copy everything into the new array
-    for i := 0 to high(a) do
-      Result[i] := a[i];
-
-    // Now, loop through just the part that's changing
-    for i := 0 to move do
+procedure print_registers(regs: array of integer);
+var 
+  i: integer;
+  chara: integer;
+begin
+  chara := Ord('a');
+  for i := low(regs) to high(regs) do
     begin
-      // The -1 is to adjust for the 0-index array
-      from_pos := (i + start_pos) mod length(a);
-      to_pos := (start_pos + move - i) mod length(a);
-      //writeln('    from index: ', from_pos, ' to index:', to_pos);
-      Result[to_pos] := a[from_pos];
+      writeln(chr(chara + i), ' : ', regs[i]);
     end;
-  end;
+end;
 
-  function fold_knots_return_hash(moves: TIntArray): string;
-  const
-    ITERATIONS = 64;
-  var
-    pos, skip, i, mov: integer;
-    knots: TIntArray255;
-  begin
-    for i := 0 to high(knots) do
-      knots[i] := i;
-    pos := 0;
-    skip := 0;
-    for i := 1 to ITERATIONS do
-    begin
-      for mov in moves do
-      begin
-        knots := fold_array(knots, pos, mov - 1);
-        pos := pos + mov + skip;
-        skip := skip + 1;
-      end;
-    end;
-    Result := get_knot_hash(knots);
-  end;
-
-  function active_cells(hash: string): integer;
-  var
-    c: char;
-    i, j: integer;
-    n: integer;
-  begin
-    Result := 0;
-    for j := 1 to length(hash) do
-    begin
-      n := strtoint('$'+ hash[j]);
-      for i := 0 to 3 do
-      begin
-        if ((n shr i) and 1) = 1 then
-          Inc(Result);
-      end;
-    end;
-
-  end;
-
-  procedure part1(infilename: string);
-  var
-    fold_ops: TIntArray;
-    hash: string;
-    row: integer;
-    rowkey: string;
-    squares: integer;
-    h: TStringList;
-  begin
-    writeln('PART 1 ----------------');
-    squares := 0;
-    for  row := 0 to 127 do
-    begin
-      rowkey := infilename + '-' + IntToStr(row);
-      fold_ops := get_ops2(rowkey);
-      hash := fold_knots_return_hash(fold_ops);
-      writeln(row, ' -- ', hash);
-      squares := squares + active_cells(hash);
-    end;
-    writeln('Found ', squares, ' active squares');
-
-    h:= TStringList.create;
-    h.add('$cd');
-    h.add('$42');
-    h.add('$4c');
-    h.add('$33');
-    h.add('$58');
-    h.add('$d3');
-    h.add('$02');
-    h.add('$2a');
-
-
-    (*
-    ##.#.#..
-    1101 0100
-    d4
-
-    0 = 0000
-    1 = 0001
-    2 = 0010
-    3 = 0011
-    4 = 0100
-    5 = 0101
-    6 = 0110
-    7 = 0111
-    8 = 1000
-    9 = 1001
-    a = 1010
-    b = 1011
-    c = 1100
-    d = 1101
-    e = 1110
-    f = 1111
-
-    *)
-
-
-  end;
-
-  procedure part2(infilename: string);
-  begin
-    writeln('PART 2 ----------------');
-
-  end;
-
-var
+procedure part1_try1;
+var 
+  registers: array[0..25] of integer;
+  ipointer: integer;
+  last_played, recovered: integer;
+  ilist: TStringList;
   fname: string;
-
+  i: integer;
+  op: TOp;
+  
 begin
   if IN_TEST then
-    fname := 'flqrgnkx'
+    fname := 'day18test.txt'
   else
-    fname := 'hxtvlmkl';
+    fname := 'day18input.txt';
 
-  writeln('DAY 14');
-  if PART = 1 then part1(fname);
-  if PART = 2 then part2(fname);
+  write('DAY 18');
+  if IN_TEST then
+    writeln('   TEST')
+  else
+    writeln('    PROD *********************');
+  writeln;
+
+  for i := 0 to high(registers) do
+    registers[i] := 0;
+
+  ilist := read_data_file(fname);
+  ipointer := 0;
+
+  while (ipointer >= 0) and (ipointer < ilist.Count) do
+    begin
+      writeln('Starting instruction pointer: ', ipointer);
+      op := parse_op(ilist[ipointer]);
+      case op.op of 
+        'snd':
+               begin
+                 last_played := registers[op.regi];
+                 writeln('    Sound played from register "', op.regi, '" and frequency ',
+                         registers[op.regi])
+               end;
+        'set':
+               begin
+                 if op.val.isReg then
+                   registers[op.regi] := registers[op.val.reg]
+                 else
+                   registers[op.regi] := op.val.val;
+               end;
+        'add':
+               begin
+                 if op.val.isReg then
+                   registers[op.regi] := registers[op.regi] + registers[op.val.reg]
+                 else
+                   registers[op.regi] := registers[op.regi] + op.val.val;
+               end;
+        'mul':
+               begin
+                 if op.val.isReg then
+                   registers[op.regi] := registers[op.regi] * registers[op.val.reg]
+                 else
+                   registers[op.regi] := registers[op.regi] * op.val.val;
+               end;
+        'mod':
+               begin
+                 if op.val.isReg then
+                   registers[op.regi] := registers[op.regi] mod registers[op.val.reg]
+                 else
+                   registers[op.regi] := registers[op.regi] mod op.val.val;
+               end;
+        'rcv':
+               begin
+                 if registers[op.regi] <> 0 then
+                   begin
+                     recovered := last_played;
+                     writeln('Recovered sound: ', recovered);
+                     print_registers(registers);
+                     break;
+                   end
+                 else
+                   writeln('No sound recovered');
+               end;
+        'jgz':
+               begin
+
+                 if registers[op.regi] > 0 then
+                   begin
+                     writeln('Instruction pointer before: ', ipointer);
+                     writeln(Registers[op.regi]);
+                     if op.val.isReg then
+                       ipointer := ipointer + registers[op.val.reg]
+                     else
+                       ipointer := ipointer + op.val.val;
+                     writeln('Instruction pointer after: ', ipointer);
+                     //readln;
+                     continue;
+                     // Skip the rest of the loop since this is a jump
+                   end;
+               end;
+        else
+          writeln('Unknown op: ', ilist[ipointer]);
+      end;
+      //print_registers(registers);
+      Inc(ipointer);
+      writeln('Ending instruction pointer: ', ipointer);
+      writeln;
+      //readln;
+    end;
+
+  writeln;
+  writeln('Recovered sound: ', recovered);
 
   readln;
+end;
+
+begin
+
 end.

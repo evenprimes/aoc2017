@@ -9,7 +9,8 @@
         <Filename Value="day18.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="18" Y="20"/>
+        <TopLine Value="175"/>
+        <CursorPos X="13" Y="186"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
