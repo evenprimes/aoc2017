@@ -38,7 +38,7 @@ uses
       // index of the register for first operand
       regi: integer;
       // value of the second operand, may need to lookup current register value
-      val: integer;
+      val: int64;
     end;
 
 
@@ -113,7 +113,55 @@ begin
   parts.Free;
 end;
 
-procedure print_registers(regs: array of integer);
+// function get(s: string; r: array of integer): integer;
+// var 
+
+// begin
+// end;
+
+function parse_op(s: string; r: array of int64): TOp2;
+var 
+  parts: TStringList;
+
+begin
+  Result := TOp2.create;
+  parts := tstringlist.create;
+  parts.Delimiter := ' ';
+  parts.DelimitedText := s;
+  writeln('in parse_op: ', s);
+
+  Result.op := parts[0];
+  if result.op = 'jgz' then
+    begin
+      if IsSignedIntegerString(parts[1]) then
+        begin
+          result.regi :=  StrToInt(parts[1])
+        end
+      else
+        begin
+          Result.regi := r[Ord(parts[1][1]) - Ord('a')];
+        end;
+    end
+  else
+    begin
+      Result.regi := Ord(parts[1][1]) - Ord('a');
+    end;
+  result.val := 0;
+  if not ((Result.op = 'snd') or (Result.op = 'rcv')) then
+    begin
+      if IsSignedIntegerString(parts[2]) then
+        Result.val := StrToInt(parts[2])
+      else
+        Result.val := r[ord(parts[2][1]) - ord('a')];
+    end;
+  writeln('    resulting instruction: ', result.op, ' register: ', result.regi, ' value: '
+          ,
+          result.val);
+
+
+end;
+
+procedure print_registers(regs: array of int64);
 var 
   i: integer;
   chara: integer;
@@ -125,119 +173,80 @@ begin
     end;
 end;
 
-procedure part1_try1;
+
 var 
-  registers: array[0..25] of integer;
+  registers: array[0..25] of int64;
   ipointer: integer;
-  last_played, recovered: integer;
+  last_played, recovered: int64;
   ilist: TStringList;
   fname: string;
   i: integer;
-  op: TOp;
+  op: TOp2;
+  current_op: string;
 
 begin
-  if IN_TEST then
-    fname := 'day18test.txt'
-  else
-    fname := 'day18input.txt';
-
   write('DAY 18');
   if IN_TEST then
-    writeln('   TEST')
+    begin
+      fname := 'day18test.txt';
+      writeln('  testing -----');
+    end
   else
-    writeln('    PROD *********************');
-  writeln;
+    begin
+      fname := 'day18input.txt';
+      writeln('  PROD ***************************************');
+    end;
 
+  ipointer := 0;
+  recovered := -999;
   for i := 0 to high(registers) do
     registers[i] := 0;
-
   ilist := read_data_file(fname);
-  ipointer := 0;
 
   while (ipointer >= 0) and (ipointer < ilist.Count) do
     begin
-      writeln('Starting instruction pointer: ', ipointer);
-      op := parse_op(ilist[ipointer]);
+      op := parse_op(ilist[ipointer], registers);
+
       case op.op of 
-        'snd':
-               begin
-                 last_played := registers[op.regi];
-                 writeln('    Sound played from register "', op.regi, '" and frequency ',
-                         registers[op.regi])
-               end;
-        'set':
-               begin
-                 if op.val.isReg then
-                   registers[op.regi] := registers[op.val.reg]
-                 else
-                   registers[op.regi] := op.val.val;
-               end;
-        'add':
-               begin
-                 if op.val.isReg then
-                   registers[op.regi] := registers[op.regi] + registers[op.val.reg]
-                 else
-                   registers[op.regi] := registers[op.regi] + op.val.val;
-               end;
-        'mul':
-               begin
-                 if op.val.isReg then
-                   registers[op.regi] := registers[op.regi] * registers[op.val.reg]
-                 else
-                   registers[op.regi] := registers[op.regi] * op.val.val;
-               end;
-        'mod':
-               begin
-                 if op.val.isReg then
-                   registers[op.regi] := registers[op.regi] mod registers[op.val.reg]
-                 else
-                   registers[op.regi] := registers[op.regi] mod op.val.val;
-               end;
-        'rcv':
-               begin
-                 if registers[op.regi] <> 0 then
-                   begin
-                     recovered := last_played;
-                     writeln('Recovered sound: ', recovered);
-                     print_registers(registers);
-                     break;
-                   end
-                 else
-                   writeln('No sound recovered');
-               end;
         'jgz':
                begin
-
-                 if registers[op.regi] > 0 then
+                 if op.regi > 0 then
                    begin
-                     writeln('Instruction pointer before: ', ipointer);
-                     writeln(Registers[op.regi]);
-                     if op.val.isReg then
-                       ipointer := ipointer + registers[op.val.reg]
-                     else
-                       ipointer := ipointer + op.val.val;
-                     writeln('Instruction pointer after: ', ipointer);
-                     //readln;
+                     writeln('-- -- JGZ triggered by ', op.val);
+                     write('-- -- -- ipointer from ', ipointer);
+                     ipointer := ipointer + op.val;
+                     writeln(' to ', ipointer);
+                     print_registers(registers);
+                     readln;
                      continue;
-                     // Skip the rest of the loop since this is a jump
                    end;
                end;
-        else
-          writeln('Unknown op: ', ilist[ipointer]);
+        'snd':
+               begin
+                 writeln('-- -- SND at tone ', registers[op.regi]);
+                 last_played := registers[op.regi];
+               end;
+        'set': registers[op.regi] := op.val;
+        'add': registers[op.regi] := registers[op.regi] + op.val;
+        'mul': registers[op.regi] := registers[op.regi] * op.val;
+        'mod': registers[op.regi] := registers[op.regi] mod op.val;
+        'rcv':
+               begin
+                 writeln('rcv ', op.regi);
+                 if registers[op.regi] <> 0 then
+                   begin
+                     writeln('-- -- valid rcv');
+                     recovered := last_played;
+                     break;
+                   end;
+               end;
+        else writeln('unknown operation! ', op.op);
       end;
-      //print_registers(registers);
-      Inc(ipointer);
-      writeln('Ending instruction pointer: ', ipointer);
-      writeln;
-      //readln;
+      if registers[15] < 0 then writeln('register p went negative: ', registers[15]);
+      inc(ipointer);
+      op.Free;
     end;
-
   writeln;
-  writeln('Recovered sound: ', recovered);
-
-  readln;
-end;
-
-begin
+  writeln('Recovered ', recovered);
 
 end.
