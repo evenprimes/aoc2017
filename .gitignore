@@ -82,3 +82,7 @@ __recovery/
 modules/
 lib/
 backup/
+
+
+test.pas
+.vscode/GTEMP.pas
