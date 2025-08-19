@@ -1,7 +1,6 @@
+{$mode objfpc}{$H+}{$J-}
 
 unit aocutils;
-
-{ifdef FPC} {mode objfpc}{H+}{J-} {endif}
 
 interface
 
@@ -13,7 +12,7 @@ uses Classes;
 
   implementation
 
-  uses 
+  uses
     SysUtils;
 
     function is_letter(const c: char): boolean;
